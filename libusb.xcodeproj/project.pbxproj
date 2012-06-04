@@ -37,12 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8574A8E5157CA63F00E56B02 /* liblibusb copy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibusb copy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8574A8E5157CA63F00E56B02 /* libusb-compat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libusb-compat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8574A8E9157CA68B00E56B02 /* core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
 		8574A8EA157CA68B00E56B02 /* usb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usb.h; sourceTree = "<group>"; };
 		8574A8EB157CA68B00E56B02 /* usbi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usbi.h; sourceTree = "<group>"; };
 		8574A8EF157CA6FE00E56B02 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
-		8597A51E157C8FB600C7A0BC /* liblibusb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibusb.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8597A51E157C8FB600C7A0BC /* libusb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libusb.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8597A525157C904100C7A0BC /* core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = core.c; path = Sources/libusb/core.c; sourceTree = "<group>"; };
 		8597A527157C905000C7A0BC /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = Sources/libusb/config.h; sourceTree = "<group>"; };
 		8597A528157C905000C7A0BC /* descriptor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = descriptor.c; path = Sources/libusb/descriptor.c; sourceTree = "<group>"; };
@@ -126,8 +126,8 @@
 		8597A51F157C8FB600C7A0BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8597A51E157C8FB600C7A0BC /* liblibusb.a */,
-				8574A8E5157CA63F00E56B02 /* liblibusb copy.a */,
+				8597A51E157C8FB600C7A0BC /* libusb.a */,
+				8574A8E5157CA63F00E56B02 /* libusb-compat.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,9 +184,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8574A8D1157CA63F00E56B02 /* libusb-compat */ = {
+		8574A8D1157CA63F00E56B02 /* usb-compat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8574A8E2157CA63F00E56B02 /* Build configuration list for PBXNativeTarget "libusb-compat" */;
+			buildConfigurationList = 8574A8E2157CA63F00E56B02 /* Build configuration list for PBXNativeTarget "usb-compat" */;
 			buildPhases = (
 				8574A8D2157CA63F00E56B02 /* Sources */,
 				8574A8D9157CA63F00E56B02 /* Frameworks */,
@@ -197,14 +197,14 @@
 			dependencies = (
 				8574A8F2157CA71C00E56B02 /* PBXTargetDependency */,
 			);
-			name = "libusb-compat";
+			name = "usb-compat";
 			productName = libusb;
-			productReference = 8574A8E5157CA63F00E56B02 /* liblibusb copy.a */;
+			productReference = 8574A8E5157CA63F00E56B02 /* libusb-compat.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		8597A51D157C8FB600C7A0BC /* libusb */ = {
+		8597A51D157C8FB600C7A0BC /* usb */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8597A522157C8FB600C7A0BC /* Build configuration list for PBXNativeTarget "libusb" */;
+			buildConfigurationList = 8597A522157C8FB600C7A0BC /* Build configuration list for PBXNativeTarget "usb" */;
 			buildPhases = (
 				8597A51A157C8FB600C7A0BC /* Sources */,
 				8597A51B157C8FB600C7A0BC /* Frameworks */,
@@ -214,9 +214,9 @@
 			);
 			dependencies = (
 			);
-			name = libusb;
+			name = usb;
 			productName = libusb;
-			productReference = 8597A51E157C8FB600C7A0BC /* liblibusb.a */;
+			productReference = 8597A51E157C8FB600C7A0BC /* libusb.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -240,8 +240,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8597A51D157C8FB600C7A0BC /* libusb */,
-				8574A8D1157CA63F00E56B02 /* libusb-compat */,
+				8597A51D157C8FB600C7A0BC /* usb */,
+				8574A8D1157CA63F00E56B02 /* usb-compat */,
 			);
 		};
 /* End PBXProject section */
@@ -273,7 +273,7 @@
 /* Begin PBXTargetDependency section */
 		8574A8F2157CA71C00E56B02 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8597A51D157C8FB600C7A0BC /* libusb */;
+			target = 8597A51D157C8FB600C7A0BC /* usb */;
 			targetProxy = 8574A8F1157CA71C00E56B02 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -283,7 +283,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8597A55E157C933100C7A0BC /* Library-Debug.xcconfig */;
 			buildSettings = {
-				PRODUCT_NAME = "libusb copy";
 			};
 			name = Debug;
 		};
@@ -291,7 +290,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8597A560157C936A00C7A0BC /* Library-Release.xcconfig */;
 			buildSettings = {
-				PRODUCT_NAME = "libusb copy";
 			};
 			name = Release;
 		};
@@ -326,7 +324,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8574A8E2157CA63F00E56B02 /* Build configuration list for PBXNativeTarget "libusb-compat" */ = {
+		8574A8E2157CA63F00E56B02 /* Build configuration list for PBXNativeTarget "usb-compat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8574A8E3157CA63F00E56B02 /* Debug */,
@@ -344,7 +342,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8597A522157C8FB600C7A0BC /* Build configuration list for PBXNativeTarget "libusb" */ = {
+		8597A522157C8FB600C7A0BC /* Build configuration list for PBXNativeTarget "usb" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8597A520157C8FB600C7A0BC /* Debug */,
