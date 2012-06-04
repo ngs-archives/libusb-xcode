@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8574A8EC157CA68B00E56B02 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 8574A8E9157CA68B00E56B02 /* core.c */; };
+		8574A8ED157CA68B00E56B02 /* usb.h in Headers */ = {isa = PBXBuildFile; fileRef = 8574A8EA157CA68B00E56B02 /* usb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8574A8EE157CA68B00E56B02 /* usbi.h in Headers */ = {isa = PBXBuildFile; fileRef = 8574A8EB157CA68B00E56B02 /* usbi.h */; };
+		8574A8F0157CA6FE00E56B02 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 8574A8EF157CA6FE00E56B02 /* config.h */; };
 		8597A526157C904100C7A0BC /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 8597A525157C904100C7A0BC /* core.c */; };
 		8597A52E157C905000C7A0BC /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 8597A527157C905000C7A0BC /* config.h */; };
 		8597A52F157C905000C7A0BC /* descriptor.c in Sources */ = {isa = PBXBuildFile; fileRef = 8597A528157C905000C7A0BC /* descriptor.c */; };
 		8597A530157C905000C7A0BC /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = 8597A529157C905000C7A0BC /* io.c */; };
-		8597A531157C905000C7A0BC /* libusb.h in Headers */ = {isa = PBXBuildFile; fileRef = 8597A52A157C905000C7A0BC /* libusb.h */; };
+		8597A531157C905000C7A0BC /* libusb.h in Headers */ = {isa = PBXBuildFile; fileRef = 8597A52A157C905000C7A0BC /* libusb.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8597A532157C905000C7A0BC /* libusbi.h in Headers */ = {isa = PBXBuildFile; fileRef = 8597A52B157C905000C7A0BC /* libusbi.h */; };
 		8597A533157C905000C7A0BC /* sync.c in Sources */ = {isa = PBXBuildFile; fileRef = 8597A52C157C905000C7A0BC /* sync.c */; };
 		8597A534157C905000C7A0BC /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 8597A52D157C905000C7A0BC /* version.h */; };
@@ -22,21 +26,36 @@
 		8597A555157C920600C7A0BC /* threads_posix.h in Headers */ = {isa = PBXBuildFile; fileRef = 8597A550157C920600C7A0BC /* threads_posix.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8574A8F1157CA71C00E56B02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8597A4DE157C8BE600C7A0BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8597A51D157C8FB600C7A0BC;
+			remoteInfo = libusb;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		8574A8E5157CA63F00E56B02 /* liblibusb copy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibusb copy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8574A8E9157CA68B00E56B02 /* core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
+		8574A8EA157CA68B00E56B02 /* usb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usb.h; sourceTree = "<group>"; };
+		8574A8EB157CA68B00E56B02 /* usbi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usbi.h; sourceTree = "<group>"; };
+		8574A8EF157CA6FE00E56B02 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		8597A51E157C8FB600C7A0BC /* liblibusb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibusb.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8597A525157C904100C7A0BC /* core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = core.c; path = Sources/core.c; sourceTree = "<group>"; };
-		8597A527157C905000C7A0BC /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = Sources/config.h; sourceTree = "<group>"; };
-		8597A528157C905000C7A0BC /* descriptor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = descriptor.c; path = Sources/descriptor.c; sourceTree = "<group>"; };
-		8597A529157C905000C7A0BC /* io.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = io.c; path = Sources/io.c; sourceTree = "<group>"; };
-		8597A52A157C905000C7A0BC /* libusb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libusb.h; path = Sources/libusb.h; sourceTree = "<group>"; };
-		8597A52B157C905000C7A0BC /* libusbi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libusbi.h; path = Sources/libusbi.h; sourceTree = "<group>"; };
-		8597A52C157C905000C7A0BC /* sync.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sync.c; path = Sources/sync.c; sourceTree = "<group>"; };
-		8597A52D157C905000C7A0BC /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = Sources/version.h; sourceTree = "<group>"; };
-		8597A54C157C920600C7A0BC /* darwin_usb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = darwin_usb.c; path = Sources/darwin_usb.c; sourceTree = "<group>"; };
-		8597A54D157C920600C7A0BC /* darwin_usb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = darwin_usb.h; path = Sources/darwin_usb.h; sourceTree = "<group>"; };
-		8597A54E157C920600C7A0BC /* poll_posix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = poll_posix.h; path = Sources/poll_posix.h; sourceTree = "<group>"; };
-		8597A54F157C920600C7A0BC /* threads_posix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = threads_posix.c; path = Sources/threads_posix.c; sourceTree = "<group>"; };
-		8597A550157C920600C7A0BC /* threads_posix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = threads_posix.h; path = Sources/threads_posix.h; sourceTree = "<group>"; };
+		8597A525157C904100C7A0BC /* core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = core.c; path = Sources/libusb/core.c; sourceTree = "<group>"; };
+		8597A527157C905000C7A0BC /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = Sources/libusb/config.h; sourceTree = "<group>"; };
+		8597A528157C905000C7A0BC /* descriptor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = descriptor.c; path = Sources/libusb/descriptor.c; sourceTree = "<group>"; };
+		8597A529157C905000C7A0BC /* io.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = io.c; path = Sources/libusb/io.c; sourceTree = "<group>"; };
+		8597A52A157C905000C7A0BC /* libusb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libusb.h; path = Sources/libusb/libusb.h; sourceTree = "<group>"; };
+		8597A52B157C905000C7A0BC /* libusbi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libusbi.h; path = Sources/libusb/libusbi.h; sourceTree = "<group>"; };
+		8597A52C157C905000C7A0BC /* sync.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sync.c; path = Sources/libusb/sync.c; sourceTree = "<group>"; };
+		8597A52D157C905000C7A0BC /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = Sources/libusb/version.h; sourceTree = "<group>"; };
+		8597A54C157C920600C7A0BC /* darwin_usb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = darwin_usb.c; path = Sources/libusb/darwin_usb.c; sourceTree = "<group>"; };
+		8597A54D157C920600C7A0BC /* darwin_usb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = darwin_usb.h; path = Sources/libusb/darwin_usb.h; sourceTree = "<group>"; };
+		8597A54E157C920600C7A0BC /* poll_posix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = poll_posix.h; path = Sources/libusb/poll_posix.h; sourceTree = "<group>"; };
+		8597A54F157C920600C7A0BC /* threads_posix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = threads_posix.c; path = Sources/libusb/threads_posix.c; sourceTree = "<group>"; };
+		8597A550157C920600C7A0BC /* threads_posix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = threads_posix.h; path = Sources/libusb/threads_posix.h; sourceTree = "<group>"; };
 		8597A55B157C92D100C7A0BC /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		8597A55C157C92F200C7A0BC /* Project-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
 		8597A55D157C930B00C7A0BC /* Project-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
@@ -46,6 +65,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8574A8D9157CA63F00E56B02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8597A51B157C8FB600C7A0BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,24 +82,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8597A4DC157C8BE600C7A0BC = {
-			isa = PBXGroup;
-			children = (
-				8597A559157C92C100C7A0BC /* Configurations */,
-				8597A524157C902900C7A0BC /* Sources */,
-				8597A51F157C8FB600C7A0BC /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		8597A51F157C8FB600C7A0BC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8597A51E157C8FB600C7A0BC /* liblibusb.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		8597A524157C902900C7A0BC /* Sources */ = {
+		8574A8E7157CA67C00E56B02 /* libusb */ = {
 			isa = PBXGroup;
 			children = (
 				8597A54C157C920600C7A0BC /* darwin_usb.c */,
@@ -89,6 +98,45 @@
 				8597A52B157C905000C7A0BC /* libusbi.h */,
 				8597A52C157C905000C7A0BC /* sync.c */,
 				8597A52D157C905000C7A0BC /* version.h */,
+			);
+			name = libusb;
+			sourceTree = "<group>";
+		};
+		8574A8E8157CA68B00E56B02 /* libusb-compat */ = {
+			isa = PBXGroup;
+			children = (
+				8574A8EF157CA6FE00E56B02 /* config.h */,
+				8574A8E9157CA68B00E56B02 /* core.c */,
+				8574A8EA157CA68B00E56B02 /* usb.h */,
+				8574A8EB157CA68B00E56B02 /* usbi.h */,
+			);
+			name = "libusb-compat";
+			path = "Sources/libusb-compat";
+			sourceTree = "<group>";
+		};
+		8597A4DC157C8BE600C7A0BC = {
+			isa = PBXGroup;
+			children = (
+				8597A559157C92C100C7A0BC /* Configurations */,
+				8597A524157C902900C7A0BC /* Sources */,
+				8597A51F157C8FB600C7A0BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8597A51F157C8FB600C7A0BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8597A51E157C8FB600C7A0BC /* liblibusb.a */,
+				8574A8E5157CA63F00E56B02 /* liblibusb copy.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8597A524157C902900C7A0BC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8574A8E8157CA68B00E56B02 /* libusb-compat */,
+				8574A8E7157CA67C00E56B02 /* libusb */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -109,12 +157,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		8574A8DA157CA63F00E56B02 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8574A8ED157CA68B00E56B02 /* usb.h in Headers */,
+				8574A8EE157CA68B00E56B02 /* usbi.h in Headers */,
+				8574A8F0157CA6FE00E56B02 /* config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8597A51C157C8FB600C7A0BC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8597A52E157C905000C7A0BC /* config.h in Headers */,
 				8597A531157C905000C7A0BC /* libusb.h in Headers */,
+				8597A52E157C905000C7A0BC /* config.h in Headers */,
 				8597A532157C905000C7A0BC /* libusbi.h in Headers */,
 				8597A534157C905000C7A0BC /* version.h in Headers */,
 				8597A552157C920600C7A0BC /* darwin_usb.h in Headers */,
@@ -126,6 +184,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		8574A8D1157CA63F00E56B02 /* libusb-compat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8574A8E2157CA63F00E56B02 /* Build configuration list for PBXNativeTarget "libusb-compat" */;
+			buildPhases = (
+				8574A8D2157CA63F00E56B02 /* Sources */,
+				8574A8D9157CA63F00E56B02 /* Frameworks */,
+				8574A8DA157CA63F00E56B02 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8574A8F2157CA71C00E56B02 /* PBXTargetDependency */,
+			);
+			name = "libusb-compat";
+			productName = libusb;
+			productReference = 8574A8E5157CA63F00E56B02 /* liblibusb copy.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		8597A51D157C8FB600C7A0BC /* libusb */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8597A522157C8FB600C7A0BC /* Build configuration list for PBXNativeTarget "libusb" */;
@@ -165,11 +241,20 @@
 			projectRoot = "";
 			targets = (
 				8597A51D157C8FB600C7A0BC /* libusb */,
+				8574A8D1157CA63F00E56B02 /* libusb-compat */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8574A8D2157CA63F00E56B02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8574A8EC157CA68B00E56B02 /* core.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8597A51A157C8FB600C7A0BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,7 +270,31 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8574A8F2157CA71C00E56B02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8597A51D157C8FB600C7A0BC /* libusb */;
+			targetProxy = 8574A8F1157CA71C00E56B02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		8574A8E3157CA63F00E56B02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8597A55E157C933100C7A0BC /* Library-Debug.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "libusb copy";
+			};
+			name = Debug;
+		};
+		8574A8E4157CA63F00E56B02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8597A560157C936A00C7A0BC /* Library-Release.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "libusb copy";
+			};
+			name = Release;
+		};
 		8597A4DF157C8BE600C7A0BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8597A55C157C92F200C7A0BC /* Project-Debug.xcconfig */;
@@ -217,6 +326,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8574A8E2157CA63F00E56B02 /* Build configuration list for PBXNativeTarget "libusb-compat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8574A8E3157CA63F00E56B02 /* Debug */,
+				8574A8E4157CA63F00E56B02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8597A4E1157C8BE600C7A0BC /* Build configuration list for PBXProject "libusb" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
