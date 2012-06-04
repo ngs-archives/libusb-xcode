@@ -1,0 +1,11 @@
+//
+//  Project-Release.xcconfig
+//  libusb
+//
+//  Created by Atsushi Nagase on 6/4/12.
+//  Copyright (c) 2012 LittleApps Inc. All rights reserved.
+//
+
+#include "Project.xcconfig"
+COPY_PHASE_STRIP = YES
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym

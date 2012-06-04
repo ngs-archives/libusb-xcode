@@ -1,0 +1,13 @@
+//
+//  Project.xcconfig
+//  libusb
+//
+//  Created by Atsushi Nagase on 6/4/12.
+//  Copyright (c) 2012 LittleApps Inc. All rights reserved.
+//
+ARCHS = $(ARCHS_STANDARD_32_64_BIT)
+SDKROOT = macosx
+GCC_WARN_ABOUT_RETURN_TYPE = YES
+GCC_WARN_UNUSED_VARIABLE = YES
+GCC_VERSION = com.apple.compilers.llvm.clang.1_0
+MACOSX_DEPLOYMENT_TARGET = 10.7

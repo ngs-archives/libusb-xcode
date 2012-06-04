@@ -1,0 +1,11 @@
+//
+//  Library-Debug.xcconfig
+//  libusb
+//
+//  Created by Atsushi Nagase on 6/4/12.
+//  Copyright (c) 2012 LittleApps Inc. All rights reserved.
+//
+
+#include "Library.xcconfig"
+GCC_OPTIMIZATION_LEVEL = 0
+GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1 $(inherited)
